@@ -1,4 +1,5 @@
-import Header from '@/components/web-info/Header'
+import Header from '@/components/header/Header'
+import PageLoader from '@/components/PageLoader'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
@@ -18,11 +19,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const showPageLoader = false;
+
   return (
     <html lang="en">
       <body className={`${poppins.className} px-5`}>
         <Header />
         {children}
+        {showPageLoader && <PageLoader />}
       </body>
     </html>
   )

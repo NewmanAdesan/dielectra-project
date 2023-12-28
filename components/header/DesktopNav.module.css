@@ -1,0 +1,71 @@
+
+.nav-list { @apply text-[16px] font-medium leading-[140%] text-white;
+}
+
+.nav-list li { @apply py-1 px-2 }
+
+.nav-list a:hover { @apply hover:text-color-2 transition-colors duration-300 ease-out }
+
+/* Add different delay values for each link */
+.link-1 {
+    opacity: 0;
+    margin-top: 50px;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 0s;
+  }
+  
+.link-2 {
+    opacity: 0;
+    margin-top: 50px;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 100ms;
+}
+
+.link-3 {
+    opacity: 0;
+    margin-top: 50px;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 200ms;
+}
+
+.link-4 {
+    opacity: 0;
+    margin-top: 50px;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 300ms;
+}
+
+.link-5 {
+    opacity: 0;
+    margin-top: 50px;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 400ms;
+}
+
+.link-6 {
+    opacity: 0;
+    margin-top: 50px;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 500ms;
+}
+
+.link-7 {
+    opacity: 0;
+    margin-top: 50px;
+    animation: fadeIn 0.7s ease-in-out forwards;
+    animation-delay: 600ms;
+}
+
+/* Define a fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      margin-top: 50px;
+    }
+    to {
+      opacity: 1;
+      margin-top: 0px;
+    }
+}
+
+

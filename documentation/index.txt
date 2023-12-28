@@ -1,0 +1,19 @@
+
+
+Header Component
+    - Logo 
+    - Navigation Links
+    - Header-Buttons
+        - Call-To-Action Button
+        - Menu Button
+
+    - Header
+    - header element
+    - flex display
+
+
+    - Logo
+    - div container with logo image(Image) & logo name(span) 
+
+
+    
