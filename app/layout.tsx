@@ -23,7 +23,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${poppins.className} px-5`}>
+      <body className={`${poppins.className}`}>
         <Header />
         {children}
         {showPageLoader && <PageLoader />}

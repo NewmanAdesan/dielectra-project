@@ -12,7 +12,7 @@ const Header = () => {
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
 
   return (
-    <header className='p-3 fixed top-0 left-0 flex justify-center bg-header-bg w-full h-header-mobile-height md:h-header-desktop-height md:p-4'>
+    <header className='p-3 fixed top-0 left-0 z-30 flex justify-center bg-header-bg w-full h-header-mobile-height md:h-header-desktop-height md:p-4'>
         <div className='flex items-center justify-between gap-3 w-full max-w-[1280px]'>
           {/* logo */}
           <Logo />

@@ -14,7 +14,11 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       backgroundColor: {
-        'header-bg': 'rgba(10, 10, 10, 0.5)'
+        'header-bg': 'rgba(247, 247, 247, 0.20)',
+        'image-overlay': '#060606'
+      },
+      width: {
+        'homepage-banner-text': 'calc(100% - 40px)',
       },
       height: {
         'header-mobile-height': '72px',
@@ -22,7 +26,21 @@ const config: Config = {
       },
       colors: {
         'color-1': '#30ADCF',
-        'color-2': '#2AE1CB'
+        'color-2': '#2AE1CB',
+        'color-3': 'rgba(6, 6, 6, 0.50)'
+      },
+      keyframes: {
+        imageLoad: {
+          '0%': { opacity: '0' },
+          '50%': { opacity: '0.1' },
+          '100%': { opacity: '0'}
+        }
+      },
+      animation: {
+        'image-loading': 'imageLoad 1.5s linear infinite'
+      }, 
+      backdropBlur: {
+        'xsm': '2.5px',
       }
     },
   },
