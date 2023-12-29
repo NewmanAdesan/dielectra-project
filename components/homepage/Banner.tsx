@@ -6,10 +6,9 @@ import styles from './Banner.module.css'
 
 
 const Banner = () => {
-  const [ImageOpacity, setImageOpacity] = useState(0);
-  const [dummyState, setDummyState] = useState(false);
-  const [activeImage, setActiveImage] = useState(0);
+  const [activeImage, setActiveImage] = useState(-1);
   const [howManyImagesHasLoaded, setHowManyImagesHasLoaded] = useState(-1);
+  const [intervalID, setIntervalID] = useState<number | null>(null);
 
   useEffect(() => {
     console.log('useEffect has started');
@@ -19,6 +18,24 @@ const Banner = () => {
       setHowManyImagesHasLoaded(-1);
     }
   }, [])
+
+  function startInterval() {
+
+    console.log('the startInterval is called')
+
+     if (intervalID) {
+      console.log('previous interval was cleared')
+      clearInterval(intervalID)
+    };
+     setIntervalID(
+        Number(
+          setInterval(()=>{
+            console.log('new interval has started');
+            setActiveImage(prev => (prev + 1) % 5);
+          }, 5000)
+        )
+     )
+  }
   
   return (
     <section className='w-full h-[681px] relative'>
@@ -31,13 +48,13 @@ const Banner = () => {
                         objectFit: 'cover',
                         overflow: 'hidden',
                         objectPosition: 'center',
-                        opacity: activeImage === 1 ? '1' : '0',
+                        opacity: activeImage === 0 ? '1' : '0',
                         transition: 'opacity 1s ease'
                    }}
                    onLoad={() => {
                       console.log('first banner image has loaded');
                       setHowManyImagesHasLoaded( prev => prev + 1);
-                      setActiveImage(1);
+                      setActiveImage(0);
                    }}
             />}
             {howManyImagesHasLoaded >= 1 && <Image src='/homepage/banner-image-2.png'
@@ -47,7 +64,7 @@ const Banner = () => {
                         objectFit: 'cover',
                         overflow: 'hidden',
                         objectPosition: 'center',
-                        opacity: activeImage === 2 ? '1' : '0',
+                        opacity: activeImage === 1 ? '1' : '0',
                         transition: 'opacity 1s ease',
                    }}
                    onLoad={() => {
@@ -62,7 +79,7 @@ const Banner = () => {
                         objectFit: 'cover',
                         overflow: 'hidden',
                         objectPosition: 'center',
-                        opacity: activeImage === 3 ? '1' : '0',
+                        opacity: activeImage === 2 ? '1' : '0',
                         transition: 'opacity 1s ease',
                    }}
                    onLoad={() => {
@@ -77,7 +94,7 @@ const Banner = () => {
                         objectFit: 'cover',
                         overflow: 'hidden',
                         objectPosition: 'center',
-                        opacity: activeImage === 4 ? '1' : '0',
+                        opacity: activeImage === 3 ? '1' : '0',
                         transition: 'opacity 1s ease',
                    }}
                    onLoad={() => {
@@ -92,12 +109,13 @@ const Banner = () => {
                         objectFit: 'cover',
                         overflow: 'hidden',
                         objectPosition: 'center',
-                        opacity: activeImage === 5 ? '1' : '0',
+                        opacity: activeImage === 4 ? '1' : '0',
                         transition: 'opacity 1s ease',
                    }}
                    onLoad={() => {
                       console.log('banner image 5 has loaded');
                       setHowManyImagesHasLoaded( prev => prev + 1);
+                      startInterval();
                    }}
             />}
         </div>
@@ -111,14 +129,30 @@ const Banner = () => {
         {/* Banner Pagination */}
         <div className='absolute bottom-10 left-1/2 -translate-x-1/2 '>
           <div className='flex gap-1 justify-center w-20 rounded-lg bg-black p-1'>
-              <button className={`${activeImage === 1 ? 'w-4 bg-neutral-200' : 'w-2 bg-neutral-500'} h-2  rounded-full hover:bg-neutral-200 transition-all duration-300 ease-in-out`} onClick={() => setActiveImage(1)}></button>
-              <button className={`${activeImage === 2 ? 'w-4 bg-neutral-200' : 'w-2 bg-neutral-500'} h-2  rounded-full hover:bg-neutral-200 transition-all duration-300 ease-in-out`} onClick={() => setActiveImage(2)}></button>
-              <button className={`${activeImage === 3 ? 'w-4 bg-neutral-200' : 'w-2 bg-neutral-500'} h-2  rounded-full hover:bg-neutral-200 transition-all duration-300 ease-in-out`} onClick={() => setActiveImage(3)}></button>
-              <button className={`${activeImage === 4 ? 'w-4 bg-neutral-200' : 'w-2 bg-neutral-500'} h-2  rounded-full hover:bg-neutral-200 transition-all duration-300 ease-in-out`} onClick={() => setActiveImage(4)}></button>
-              <button className={`${activeImage === 5 ? 'w-4 bg-neutral-200' : 'w-2 bg-neutral-500'} h-2  rounded-full hover:bg-neutral-200 transition-all duration-300 ease-in-out`} onClick={() => setActiveImage(5)}></button>
+              <button className={`${activeImage === 0 ? 'w-4 bg-neutral-200' : 'w-2 bg-neutral-500'} h-2  rounded-full hover:bg-neutral-200 transition-all duration-300 ease-in-out`} onClick={() => {
+                  setActiveImage(0);
+                  startInterval();
+                }}></button>
+              <button className={`${activeImage === 1 ? 'w-4 bg-neutral-200' : 'w-2 bg-neutral-500'} h-2  rounded-full hover:bg-neutral-200 transition-all duration-300 ease-in-out`} onClick={() => {
+                  setActiveImage(1);
+                  startInterval();
+                }}></button>
+              <button className={`${activeImage === 2 ? 'w-4 bg-neutral-200' : 'w-2 bg-neutral-500'} h-2  rounded-full hover:bg-neutral-200 transition-all duration-300 ease-in-out`} onClick={() => {
+                  setActiveImage(2);
+                  startInterval();
+                }}></button>
+              <button className={`${activeImage === 3 ? 'w-4 bg-neutral-200' : 'w-2 bg-neutral-500'} h-2  rounded-full hover:bg-neutral-200 transition-all duration-300 ease-in-out`} onClick={() => {
+                  setActiveImage(3);
+                  startInterval();
+                }}></button>
+              <button className={`${activeImage === 4 ? 'w-4 bg-neutral-200' : 'w-2 bg-neutral-500'} h-2  rounded-full hover:bg-neutral-200 transition-all duration-300 ease-in-out`} onClick={() => {
+                  setActiveImage(4);
+                  startInterval();
+                }}></button>
           </div>
         </div>
 
+        {/* Banner Arrows */}
     </section>
   )
 }

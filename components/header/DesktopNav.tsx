@@ -123,7 +123,10 @@ const DesktopNav = () => {
                 Blog
           </Link>
         </li>
-        <span className={`absolute top-8 left-[${NAV_LINK_UNDERLINE_STATUS[pathname].left}] w-[${NAV_LINK_UNDERLINE_STATUS[pathname].width}] h-1 bg-color-2 transition-all duration-200 ease-in-out ${linksHidden ? 'hidden' : 'block'}`}></span>
+        <span className={`absolute top-8 h-1 bg-color-2 transition-all duration-200 ease-in-out ${linksHidden ? 'hidden' : 'block'}`} style={{
+          left: NAV_LINK_UNDERLINE_STATUS[pathname].left,
+          width: NAV_LINK_UNDERLINE_STATUS[pathname].width 
+        }}></span>
       </ul>
     </nav>
   )
