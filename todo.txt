@@ -1,21 +1,12 @@
 
-- set up the desktop navigation
-- set up the mobile navigation
-- set up the header background
-- perfect the header (check how it is position position on desktop)
 
-- start work on the banner
-- banner layout & styling with one picture
-- implement the picture slides
-- implement the picture optimization technique
-- implement a light animation of this section with intersection observer
+trustedBy section: 2h
+services: 2h
+innovation: 2h
+Testimonials: 2h
+Contact: 2h
+footer: 3h
 
-- start work on the business section
-- implement a viewport view for only desktop
-- implement a snap scroll for only the section
-- see if you can customize the snap scoll to work based on the scroll speed.
-- implement the animation of this section with intersection observer.
-- implement a back to top button
-
-- start work on the innovation section
-- implement the layout and styling for this section
+contact us (1d)
+about page (1d)
+business page (1d)

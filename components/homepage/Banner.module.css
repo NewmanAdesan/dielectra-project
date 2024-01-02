@@ -1,6 +1,0 @@
-
-
-.image-loading::before {
-    content: '';
-    @apply absolute inset-0 bg-black animate-image-loading;
-}

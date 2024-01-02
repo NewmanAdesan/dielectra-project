@@ -12,3 +12,8 @@
 .font-settings-16 {
     @apply leading-[140%] text-[16px] font-bold;
 }
+
+.image-loading::before {
+    content: '';
+    @apply absolute inset-0 bg-black animate-image-loading;
+}

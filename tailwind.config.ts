@@ -27,13 +27,15 @@ const config: Config = {
       colors: {
         'color-1': '#30ADCF',
         'color-2': '#2AE1CB',
-        'color-3': 'rgba(6, 6, 6, 0.50)'
+        'color-3': 'rgba(6, 6, 6, 0.50)',
+        'color-4': '#3A3A3A',
+        'white-1': '#F8F8F8',
       },
       keyframes: {
         imageLoad: {
-          '0%': { opacity: '0' },
-          '50%': { opacity: '0.1' },
-          '100%': { opacity: '0'}
+          '0%': { opacity: '0.1' },
+          '50%': { opacity: '0.2' },
+          '100%': { opacity: '0.1'}
         }
       },
       animation: {
@@ -41,6 +43,9 @@ const config: Config = {
       }, 
       backdropBlur: {
         'xsm': '2.5px',
+      },
+      gridTemplateColumns: {
+        'autoFit': 'repeat(auto-fit, minmax(270px, 1fr))',
       }
     },
   },
