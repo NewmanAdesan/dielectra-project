@@ -1,3 +1,5 @@
+'use client'
+
 import { CustomImageProps } from '@/common.types';
 import Image from 'next/image';
 import React, { useState } from 'react'
@@ -5,7 +7,7 @@ import React, { useState } from 'react'
 const CustomImage = ({src, alt, sizeClasses, onLoad, sizes='100vw'}: CustomImageProps) => {
   const [downloaded, setDownloaded] = useState(false)
   return (
-    <div className={`${downloaded ? '' : 'image-loading rounded-md'} ${sizeClasses} relative`}>
+    <div className={`${downloaded ? '' : 'image-loading rounded-md'} ${sizeClasses} relative overflow-hidden`}>
         <Image src={src}
               alt={alt}
               fill

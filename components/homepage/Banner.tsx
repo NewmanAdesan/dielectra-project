@@ -125,7 +125,7 @@ const Banner = () => {
         </div>
 
         {/* Banner Pagination */}
-        <div className='absolute bottom-14 left-1/2 -translate-x-1/2 '>
+        <div className='absolute bottom-16 xs:bottom-12 left-1/2 -translate-x-1/2 '>
           <div className='flex gap-1 justify-center w-20 rounded-lg bg-black p-1'>
               {BannerImagesData.map((_, index) => (
                   <BannerCarouselPaginationButton 

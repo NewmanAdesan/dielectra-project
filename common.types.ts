@@ -72,5 +72,7 @@ export type ServiceProps = {
   alt: string, 
   title: string, 
   desc: string, 
-  index: string 
+  index: string,
+  changePosition: boolean,
+  last: boolean,
 }
