@@ -76,3 +76,10 @@ export type ServiceProps = {
   changePosition: boolean,
   last: boolean,
 }
+
+
+export type TestimonyProps = {
+  testimony: string,
+  testifier: string,
+  testifierCaricature: string,
+}

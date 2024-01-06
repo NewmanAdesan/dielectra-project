@@ -51,7 +51,12 @@ const config: Config = {
         'color-3': 'rgba(6, 6, 6, 0.50)',
         'color-4': '#3A3A3A',
         'white-1': '#F8F8F8',
-        'blue-1': '#21ABCA'
+        'white-2': '#F6F6F6',
+        'blue-1': '#21ABCA',
+        'gray-1': '#B3B3B3',
+        'gray-2': '#E6E6E6',
+        'gray-3': '#F4F4F4',
+        'red-1': '#E21010',
       },
       keyframes: {
         imageLoad: {
