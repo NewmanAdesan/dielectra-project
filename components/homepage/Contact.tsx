@@ -1,7 +1,7 @@
 "use client"
 
 import { useRef} from 'react'
-import CustomImage from '../CustomImage'
+import CustomImage from '../general/CustomImage'
 
 const Contact = () => {
   const nameInputRef = useRef<null | HTMLInputElement>(null);

@@ -17,3 +17,5 @@
     content: '';
     @apply absolute inset-0 bg-black animate-image-loading;
 }
+
+.header-show { top: 0px; }

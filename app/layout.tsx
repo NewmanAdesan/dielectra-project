@@ -1,5 +1,6 @@
+import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
-import PageLoader from '@/components/PageLoader'
+import PageLoader from '@/components/general/PageLoader'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Header />
         {children}
         {showPageLoader && <PageLoader />}
+        <Footer />
       </body>
     </html>
   )

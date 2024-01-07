@@ -83,3 +83,9 @@ export type TestimonyProps = {
   testifier: string,
   testifierCaricature: string,
 }
+
+export type ContactInfoItemProps = {
+  src: string,
+  text: string,
+  bold: boolean
+}

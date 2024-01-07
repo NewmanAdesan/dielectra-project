@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import CustomImage from '../CustomImage'
+import CustomImage from '../general/CustomImage'
 
 const Innovation = () => {
   return (

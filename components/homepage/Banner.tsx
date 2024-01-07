@@ -2,10 +2,8 @@
 
 import { BannerDispatchAction, BannerInitialState } from '@/common.types' ;
 import { BannerImagesData } from '@/data/homepage' ;
-import Image from 'next/image';
 import React, { useEffect, useReducer } from 'react' ;
-import CustomFILLImage from '../CustomFILLImage';
-import CustomImage from '../CustomImage';
+import CustomImage from '../general/CustomImage';
 import BannerCarouselImage from './BannerCarouselImage' ;
 import BannerCarouselPaginationButton from './BannerCarouselPaginationButton' ;
 
