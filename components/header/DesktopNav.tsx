@@ -72,7 +72,10 @@ const DesktopNav = () => {
             shallow 
             aria-label='Explore Dielectra Businesses' 
             className={`${pathname==='/business' ? 'text-color-2' : ''} ${styles['link-2']} ${linksHidden ? 'hidden' : 'block'}`}
-            onClick={()=>handleClick('/business')}>
+            onClick={()=>{
+              handleClick('/business');
+              console.log('get business page: ' + new Date());
+            }}>
                 Businesses<span className='text-[20px]'>&gt;</span>
           </Link>
         </li>
@@ -124,8 +127,8 @@ const DesktopNav = () => {
           </Link>
         </li>
         <span className={`absolute top-8 h-1 bg-color-2 transition-all duration-200 ease-in-out ${linksHidden ? 'hidden' : 'block'}`} style={{
-          left: NAV_LINK_UNDERLINE_STATUS[pathname].left,
-          width: NAV_LINK_UNDERLINE_STATUS[pathname].width 
+          left: NAV_LINK_UNDERLINE_STATUS[pathname]?.left || '16px',
+          width: NAV_LINK_UNDERLINE_STATUS[pathname]?.width || '48px' 
         }}></span>
       </ul>
     </nav>

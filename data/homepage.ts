@@ -1,6 +1,6 @@
-import { BannerImageData } from '@/common.types'
+import { ImageData } from '@/common.types'
 
-export const BannerImagesData: BannerImageData[] = [
+export const BannerImagesData: ImageData[] = [
     {
         src: '/homepage/banner-image-1.jpg',
         alt: 'Banner Image 1'
@@ -22,3 +22,4 @@ export const BannerImagesData: BannerImageData[] = [
         alt: 'Banner Image 5'
     },
 ]
+

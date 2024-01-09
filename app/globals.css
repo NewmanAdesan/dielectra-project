@@ -9,6 +9,14 @@
     box-sizing: border-box;
 }
 
+h2 {
+    @apply text-center text-2xl text-black mb-4 md:mb-6 font-semibold leading-[33.6px] md:text-[32px] md:leading-[38px] lg:text-[40px] lg:leading-[56px]
+}
+
+.paragraph-font-setting-1 {
+    @apply text-base leading-[22.4px] font-medium md:text-xl md:leading-[28px] lg:text-2xl lg:leading-[33.6px]
+}
+
 .font-settings-16 {
     @apply leading-[140%] text-[16px] font-bold;
 }
@@ -19,3 +27,25 @@
 }
 
 .header-show { top: 0px; }
+
+.custom-max-width{
+    max-width: 335px;
+}
+
+@media screen and (min-width: 572px) {
+    .custom-max-width{
+        max-width: 248px;
+    }
+}
+
+@media screen and (min-width: 672px) {
+    .custom-max-width{
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 742px) {
+    .custom-max-width{
+        max-width: 335px;
+    }
+}

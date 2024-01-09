@@ -10,6 +10,8 @@ const config: Config = {
     screens: {
       'xs': '440px',
 
+      'xs-2': '576px',
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -57,6 +59,8 @@ const config: Config = {
         'gray-2': '#E6E6E6',
         'gray-3': '#F4F4F4',
         'red-1': '#E21010',
+        'black-00': 'rgba(0, 0, 0, 0)',
+        'black-90': 'rgba(0, 0, 0, 0.9)',
       },
       keyframes: {
         imageLoad: {

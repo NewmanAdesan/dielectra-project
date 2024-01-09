@@ -37,7 +37,6 @@ export type BannerCarouselImage = {
   howManyImagesHasLoaded: number
 }
 
-
 export type BannerCarouselPaginationButton = {
   activeImage: number, 
   index: number, 
@@ -88,4 +87,20 @@ export type ContactInfoItemProps = {
   src: string,
   text: string,
   bold: boolean
+}
+
+export type CoreValueCardProps = {
+  src: string,
+  title: string,
+  desc: string
+}
+
+export type CustomImgElementProps = {
+  src: string,
+  alt: string,
+  sizeClasses: string
+}
+
+export type OverlayImageProps = CustomImgElementProps & {
+  overlayText: string
 }

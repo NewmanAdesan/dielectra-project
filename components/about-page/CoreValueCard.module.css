@@ -1,0 +1,29 @@
+
+
+.custom-max-width{
+    max-width: 335px;
+}
+
+@media screen and (min-width: 572px) {
+    .custom-max-width{
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width: 672px) {
+    .custom-max-width{
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 742px) {
+    .custom-max-width{
+        max-width: 335px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .custom-max-width{
+        max-width: 413px;
+    }
+}
