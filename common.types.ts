@@ -58,6 +58,7 @@ export type Banner2 = {
 export type CustomFILLImageProps = {
   onLoad?: Function,
   sizes?: string,
+  priority?: boolean,
 } & ImageData
 
 

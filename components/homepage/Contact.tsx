@@ -20,7 +20,7 @@ const Contact = () => {
 
             {/* section heading */}
             <div className='pl-2 relative mb-7 max-w-7xl mx-auto'>
-                <h2 className='text-xl font-semibold mb-1 xs:text-3xl leading-[140%] xs:leading-[48px]'>
+                <h2 className='text-xl text-start font-semibold mb-1 xs:text-3xl leading-[140%] xs:leading-[48px]'>
                         <span className='text-black block'>Got any</span>
                         <span className='text-red-1 block'>Questions?</span>
                 </h2>    

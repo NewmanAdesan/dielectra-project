@@ -60,16 +60,15 @@ const DesktopNav = () => {
       <ul className={`${styles['nav-list']} relative hidden lg:flex items-center justify-center gap-6 p-2`}>
         <li>
           <Link 
-            href='/' 
-            shallow aria-label='Go to Dielectra Home Page' 
+            href='/'
+            aria-label='Go to Dielectra Home Page' 
             className={`${pathname==='/' ? 'text-color-2' : ''} ${styles['link-1']} ${linksHidden ? 'hidden' : 'block'}`}
             onClick={()=>handleClick('/')}>
                 Home
           </Link>
         </li>
         <li>
-          <Link href='/business' 
-            shallow 
+          <Link href='/business'
             aria-label='Explore Dielectra Businesses' 
             className={`${pathname==='/business' ? 'text-color-2' : ''} ${styles['link-2']} ${linksHidden ? 'hidden' : 'block'}`}
             onClick={()=>{
@@ -82,7 +81,6 @@ const DesktopNav = () => {
         <li>
           <Link 
             href='/about-us' 
-            shallow 
             aria-label='Learn About Dielectra' 
             className={`${pathname==='/about-us' ? 'text-color-2' : ''} ${styles['link-3']} ${linksHidden ? 'hidden' : 'block'}`}
             onClick={()=>handleClick('/about-us')}>
@@ -92,7 +90,6 @@ const DesktopNav = () => {
         <li>
           <Link 
             href='/contact-us' 
-            shallow 
             aria-label='Contact Dielectra' 
             className={`${pathname==='/contact-us' ? 'text-color-2' : ''} ${styles['link-4']} ${linksHidden ? 'hidden' : 'block'}`}
             onClick={()=>handleClick('/contact-us')}>
