@@ -15,6 +15,7 @@ const OperationAndMaintenance = () => {
                     src='/business-page/operation-img.png'
                     alt=''
                     sizeClasses='w-full h-[262px] max-w-[335px] rounded-xl justify-self-center md:max-w-[504px] md:h-[380px]'
+                    sizes='(max-width: 768px) 335px, 504px'
                 />
                 
                 <ul className='flex flex-col gap-3 md:gap-4 2md:self-center row-start-1'>

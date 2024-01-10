@@ -14,11 +14,12 @@ const EngineeringAndConstruction = () => {
             </p>
 
             <div className='flex flex-wrap gap-6 justify-center'>
-                <OverlayImage src='/business-page/voltage-lines.png' alt='' overlayText='High and low voltage lines' sizeClasses='w-full custom-max-width h-[306px]' />
-                <OverlayImage src='/business-page/substation.png' alt='' overlayText='Modern state of the art substations' sizeClasses='w-full custom-max-width h-[306px]' />
-                <OverlayImage src='/business-page/control-system.png' alt='' overlayText='Industrial control systems' sizeClasses='w-full custom-max-width h-[306px]' />
-                <OverlayImage src='/business-page/substation.png' alt='' overlayText='Substation automatic system' sizeClasses='w-full custom-max-width h-[306px]' />
-                <OverlayImage src='/business-page/voltage-lines.png' alt='' overlayText='Industrial electrical systems' sizeClasses='w-full custom-max-width h-[306px]' />
+                <OverlayImage src='/business-page/voltage-lines.png' alt='' overlayText='High and low voltage lines' sizeClasses='w-full custom-max-width h-[306px]'
+                sizes='413px' />
+                <OverlayImage src='/business-page/substation.png' alt='' overlayText='Modern state of the art substations' sizeClasses='w-full custom-max-width h-[306px]' sizes='413px' />
+                <OverlayImage src='/business-page/control-system.png' alt='' overlayText='Industrial control systems' sizeClasses='w-full custom-max-width h-[306px]' sizes='413px' />
+                <OverlayImage src='/business-page/substation.png' alt='' overlayText='Substation automatic system' sizeClasses='w-full custom-max-width h-[306px]' sizes='413px' />
+                <OverlayImage src='/business-page/voltage-lines.png' alt='' overlayText='Industrial electrical systems' sizeClasses='w-full custom-max-width h-[306px]' sizes='413px'/>
             </div>
         </Container>
     </section>

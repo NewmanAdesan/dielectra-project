@@ -23,11 +23,13 @@ const CareerProgress = () => {
                     src='/business-page/training-img-1.png'
                     alt=''
                     sizeClasses='w-full h-[262px] max-w-[335px] rounded-xl justify-self-center md:max-w-[504px] md:h-[380px]'
+                    sizes='(max-width: 768px) 335px, 504px'
                 />
                 <CustomImage 
                     src='/business-page/training-img-2.png'
                     alt=''
                     sizeClasses='w-full h-[262px] max-w-[335px] rounded-xl justify-self-center md:max-w-[504px] md:h-[380px]'
+                    sizes='(max-width: 768px) 335px, 504px'
                 />
             </div>
 

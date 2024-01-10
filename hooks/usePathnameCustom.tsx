@@ -1,5 +1,6 @@
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { usePagesContext } from '@/context/PagesContextProvider';
 
 
 // the return type of the hook
@@ -15,11 +16,14 @@ type PathnameStateTuple = {
 const usePathnameCustom = (): PathnameStateTuple => {
   const path = usePathname();
   const [pathname, setPathname] = useState<string>(path);
+  const pagesContextData = usePagesContext();
 
   useEffect(() => {
-    // Call the handleClick function when the pathname changes
+    // Call the handleClick function when the browser url pathname changes. 
+    // This happens when any link is clicked
     handleClick(pathname);
   }, [path]);
+
 
   /**
    * Handles the click event on a link.
@@ -30,6 +34,10 @@ const usePathnameCustom = (): PathnameStateTuple => {
   const handleClick = (newPath: string): void => {
     if (path !== newPath) {
       setPathname(newPath);
+      if (pagesContextData) {
+        const {setPageIsLoading} = pagesContextData;
+        setPageIsLoading(true);
+      }
     }
   };
 

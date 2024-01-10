@@ -37,6 +37,7 @@ const Contact = () => {
                     src='/homepage/contact-img.png'
                     alt='Contact Us'
                     sizeClasses='w-full h-60 rounded-lg sm:self-center sm:col-start-2 xs:h-72 sm: justify-self-center max-w-[500px]'
+                    sizes='(max-width: 440px) 100vw, 500px'
                  />
 
                 {/* contact form */}

@@ -7,12 +7,11 @@ import OperationAndMaintenance from '@/components/business-page/OperationAndMain
 import Banner2 from '@/components/general/Banner2';
 import React, { useEffect } from 'react'
 import { isDataView } from 'util/types';
+import usePageLoaderSetter from '@/hooks/usePageLoaderSetter';
 
 const BusinessPage = () => {
 
-  useEffect(() => {
-    console.log('business page has rendered.' + new Date());
-  }, [])
+  usePageLoaderSetter(false);
   
   return (
     <div className='paragraph-font-setting-1'>

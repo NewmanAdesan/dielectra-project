@@ -99,8 +99,9 @@ export type CustomImgElementProps = {
   src: string,
   alt: string,
   sizeClasses: string
+  sizes?: string
 }
 
 export type OverlayImageProps = CustomImgElementProps & {
-  overlayText: string
+  overlayText: string,
 }

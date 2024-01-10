@@ -26,11 +26,13 @@ const Consulting = () => {
                             src='/business-page/consulting-img-1.png'
                             alt=''
                             sizeClasses='w-full h-[262px] max-w-[335px] rounded-xl md:max-w-[504px] md:h-[380px] mb-5 lg:mb-10'
+                            sizes='(max-width: 768px) 335px, 504px'
                         />
                         <CustomImage 
                             src='/business-page/consulting-img-2.png'
                             alt=''
                             sizeClasses='w-full h-[272px]  max-w-[335px] rounded-xl md:max-w-[504px] md:h-[320px] lg:h-[380px]'
+                            sizes='(max-width: 768px) 335px, 504px'
                         />
                     </div>
                 </div>
