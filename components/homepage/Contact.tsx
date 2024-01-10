@@ -16,10 +16,10 @@ const Contact = () => {
     <section className='md:bg-gray-3'>
 
         {/* Section Container */}
-        <div  className='px-5 py-10'>
+        <div  className='px-5 py-10 max-w-7xl mx-auto'>
 
             {/* section heading */}
-            <div className='pl-2 relative mb-7 max-w-7xl mx-auto'>
+            <div className='pl-2 relative mb-7'>
                 <h2 className='text-xl text-start font-semibold mb-1 xs:text-3xl leading-[140%] xs:leading-[48px]'>
                         <span className='text-black block'>Got any</span>
                         <span className='text-red-1 block'>Questions?</span>

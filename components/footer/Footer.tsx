@@ -5,7 +5,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className='bg-color-4 py-5'>
-        <div className='p-5 grid grid-cols-autoFit gap-x-5 gap-y-7 items-start max-w-7xl mx-auto'>
+        <div className='p-5 grid grid-cols-autoFit gap-x-5 gap-y-7 items-start max-w-7xl mx-auto md:pt-16'>
             {/* Logo */}
             <Link href='/' shallow aria-label='Go to Dielectra Home Page' className='p-[10px] flex gap-1 items-center'>
                 <Image
