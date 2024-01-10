@@ -22,6 +22,12 @@ const usePathnameCustom = (): PathnameStateTuple => {
     // Call the handleClick function when the browser url pathname changes. 
     // This happens when any link is clicked
     handleClick(pathname);
+
+    // once the browser path changes place the page loader on the screen
+    if (pagesContextData) {
+      const {setPageIsLoading} = pagesContextData;
+      setPageIsLoading(true);
+    }
   }, [path]);
 
 
