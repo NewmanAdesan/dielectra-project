@@ -5,7 +5,6 @@ import React, { Dispatch, SetStateAction } from 'react'
 const MobileNavToggleBtn = ({isMobileNavActive, setIsMobileNavActive}:MobileNavProps) => {
 
   function handleClick() {
-    console.log("click");
     setIsMobileNavActive(
         (prevState: boolean) => !prevState
     )

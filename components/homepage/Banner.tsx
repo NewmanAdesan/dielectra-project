@@ -42,7 +42,6 @@ function reducer(state: BannerInitialState, action: BannerDispatchAction): Banne
       }
     
     case 'clear-interval':
-      console.log('previous interval was cleared');
       return {
         ...state,
         intervalID: state.intervalID ? Number(clearInterval(state.intervalID)) : state.intervalID
@@ -82,11 +81,9 @@ const Banner = () => {
   }, [])
 
   function startInterval() {
-    console.log('the startInterval is called')
     dispatch({type: 'clear-interval'})
     const id = Number(
       setInterval(()=>{
-        console.log('new interval has started');
         dispatch({type: 'slide-to-next-active-image'})
       }, 5000)
     )

@@ -47,7 +47,7 @@ const DesktopNav = () => {
     therefore there is going to be some sort of lag before the link highlights. 
 
     i want to remove this lag. i want to instead immediately highlight the screen and then show a loading screen that would not cover the header
-    to do this, i will synchronise the pathname gotten with a state
+    to do this, i will synchronise the url pathname gotten with a state
    */
 
   const {pathname, handleClick} = usePathnameCustom();
@@ -73,7 +73,6 @@ const DesktopNav = () => {
             className={`${pathname==='/business' ? 'text-color-2' : ''} ${styles['link-2']} ${linksHidden ? 'hidden' : 'block'}`}
             onClick={()=>{
               handleClick('/business');
-              console.log('get business page: ' + new Date());
             }}>
                 Businesses<span className='text-[20px]'>&gt;</span>
           </Link>

@@ -35,6 +35,7 @@ const usePathnameCustom = (): PathnameStateTuple => {
    * Handles the click event on a link.
    * If the pathname of the URL is different from the current pathname state,
    * update the state to trigger the highlighting effect.
+   * also set the state that tells if another page is loading to true.
    * @param {string} newPath - The new pathname obtained from the URL.
    */
   const handleClick = (newPath: string): void => {

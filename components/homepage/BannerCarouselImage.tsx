@@ -36,7 +36,6 @@ const BannerCarouselImage = ({src, alt, dispatch, index, activeImage, totalImage
                     transition: 'opacity 1s ease'
             }}
             onLoad={() => {
-                    console.log(`banner image ${index} has loaded`);
                     dispatch({type: 'loaded-an-image'})
                     if (index === 0) dispatch({type: 'set-active-image', payload: 0});  // when the first image has loaded, we immediately make it the active image
                     if (index === totalImages - 1) startInterval(); // when the last image has loaded, we start the interval

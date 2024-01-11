@@ -45,7 +45,8 @@ const config: Config = {
       },
       height: {
         'header-mobile-height': '72px',
-        'header-desktop-height': '96px'
+        'header-desktop-height': '96px',
+        'mobile-nav-height': 'calc(100vh - 72px)'
       },
       colors: {
         'color-1': '#30ADCF',
@@ -60,6 +61,7 @@ const config: Config = {
         'gray-3': '#F4F4F4',
         'red-1': '#E21010',
         'black-00': 'rgba(0, 0, 0, 0)',
+        'black-30': 'rgba(0, 0, 0, 0.3)',
         'black-90': 'rgba(0, 0, 0, 0.9)',
       },
       keyframes: {

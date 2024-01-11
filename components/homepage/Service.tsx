@@ -24,7 +24,6 @@ const Service = ({src, alt, title, desc, index, changePosition, last}: ServicePr
               }}
               onLoad={(e) => {
                       setDownloaded(true);
-                      console.log(`service image ${index} has downloaded`)
               }}
               sizes='(min-width: 440px) 50vw, 100vw'
           />

@@ -13,6 +13,11 @@ h2 {
     @apply text-center text-2xl text-black mb-4 md:mb-6 font-semibold leading-[33.6px] md:text-[32px] md:leading-[38px] lg:text-[40px] lg:leading-[56px]
 }
 
+.mobile-nav-list-item {
+    @apply w-max p-2 hover:pl-6 hover:text-blue-1;
+    transition: 300ms;
+}
+
 .paragraph-font-setting-1 {
     @apply text-base leading-[22.4px] font-medium md:text-xl md:leading-[28px] lg:text-2xl lg:leading-[33.6px]
 }
