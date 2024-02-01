@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import CustomImage from '../general/CustomImage'
+import CustomImgElement from '../general/CustomImgElement'
 
 const Innovation = () => {
   return (
@@ -23,17 +23,17 @@ const Innovation = () => {
 
               {/* Section Content Images */}
               <div className='grid gap-3'>
-                  <CustomImage 
+                  <CustomImgElement 
                       src='/homepage/innovation1.png'
                       alt='An Image Showing Innovation'
                       sizeClasses='w-[205px] h-[137px] xs:w-[305px] xs:h-[204px] sm:w-[405px] sm:h-[270px] md:w-[255px] md:h-[170px] 2md:w-[305px] 2md:h-[204px] lg:w-[355px] lg:h-[237px] xl:w-[409px] xl:h-[272px]'
-                      sizes='(max-width: 440px) 205px, (max-width: 640px) 305px, (max-width: 768px) 405px, (max-width: 876px) 255px, (max-width: 1024px) 305px, (max-width: 1280px) 355px, 409px'
+                      // sizes='(max-width: 440px) 205px, (max-width: 640px) 305px, (max-width: 768px) 405px, (max-width: 876px) 255px, (max-width: 1024px) 305px, (max-width: 1280px) 355px, 409px'
                   />
-                  <CustomImage 
+                  <CustomImgElement 
                       src='/homepage/innovation2.png'
                       alt='An Image Showing Innovation'
                       sizeClasses='w-[255px] h-[168px] xs:w-[355px] xs:h-[234px] sm:w-[455px] sm:h-[300px] md:w-[305px] md:h-[201px] 2md:w-[355px] 2md:h-[234px] lg:w-[405px] lg:h-[266px] xl:w-[503px] xl:h-[334px] ml-auto'
-                      sizes='(max-width: 440px) 255px, (max-width: 640px) 355px, (max-width: 768px) 455px, (max-width: 876px) 305px, (max-width: 1024px) 355px, (max-width: 1280px) 405px, 503px'
+                      // sizes='(max-width: 440px) 255px, (max-width: 640px) 355px, (max-width: 768px) 455px, (max-width: 876px) 305px, (max-width: 1024px) 355px, (max-width: 1280px) 405px, 503px'
                   />
               </div>
 
@@ -47,7 +47,7 @@ const Innovation = () => {
                   <p className='text-base font-normal mb-8 lg:text-xl '>Empower the future of electrical excellence through our innovative training program, virtual reality labs, mobile learning solutions, industry expert instructors, cross cultural collaborations, sustainable practices and entrepreneurial empowerment</p>
 
                   {/* Section Content Text Link*/}
-                  <Link href='/' className='flex gap-2 items-center py-[10px] px-[30px] border border-blue-1 rounded-lg text-base font-semibold text-blue-1 w-max mx-auto md:mx-0'>Learn more <span className='w-5 h-5'>&gt;</span></Link>
+                  <Link href='/' className='flex gap-2 items-center py-[10px] px-[30px] border border-blue-1 rounded-lg text-base font-semibold text-blue-1 w-max mx-auto md:mx-0'>Learn more</Link>
               </div>
 
           </div>

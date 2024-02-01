@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 import Container from '../general/Container'
-import CustomImage from '../general/CustomImage'
+import CustomImgElement from '../general/CustomImgElement'
 import ListItem from '../general/ListItem'
 
 const CareerProgress = () => {
   return (
-    <section>
+    <section id='training-and-certification'>
         <Container>
             <h2>Training, Certification and Career progression</h2> 
             
@@ -19,17 +19,17 @@ const CareerProgress = () => {
             </ul>
 
             <div className='grid xs-2:grid-cols-2 gap-5 lg:gap-10'>
-                <CustomImage 
+                <CustomImgElement 
                     src='/business-page/training-img-1.png'
                     alt=''
                     sizeClasses='w-full h-[262px] max-w-[335px] rounded-xl justify-self-center md:max-w-[504px] md:h-[380px]'
-                    sizes='(max-width: 768px) 335px, 504px'
+                    // sizes='(max-width: 768px) 335px, 504px'
                 />
-                <CustomImage 
+                <CustomImgElement 
                     src='/business-page/training-img-2.png'
                     alt=''
                     sizeClasses='w-full h-[262px] max-w-[335px] rounded-xl justify-self-center md:max-w-[504px] md:h-[380px]'
-                    sizes='(max-width: 768px) 335px, 504px'
+                    // sizes='(max-width: 768px) 335px, 504px'
                 />
             </div>
 

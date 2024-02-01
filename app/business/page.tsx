@@ -15,7 +15,7 @@ const BusinessPage = () => {
   
   return (
     <div className='paragraph-font-setting-1'>
-      <Banner2 src='/business-page/businessPageBanner.png' alt='' bannerText='Businesses' />
+      <Banner2 src='/business-page/businessPageBanner.jpg' alt='' bannerText='Businesses' />
       <EngineeringAndConstruction />
       <OperationAndMaintenance />
       <CareerProgress />

@@ -1,10 +1,11 @@
 import React from 'react'
+import { Fade } from 'react-awesome-reveal'
 import Container from '../general/Container'
 import CoreValueCard from './CoreValueCard'
 
 const OurCoreValues = () => {
   return (
-    <section>
+    <section id='core-values'>
         <Container>
             <h2>Our <span className='text-red-1'>Core</span> <span>Values</span></h2>
             <div className='flex flex-wrap gap-4 justify-center'>

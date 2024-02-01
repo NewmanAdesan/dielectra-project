@@ -16,24 +16,24 @@ const NAV_LINK_UNDERLINE_STATUS: NavLinkUnderlineStatus = {
     width: '100px'
   },
   '/about-us': {
-    left: '244px',
-    width: '71px'
+    left: '250px',
+    width: '73px'
   },
   '/contact-us': {
-    left: '357px',
-    width: '88px'
+    left: '363px',
+    width: '87px'
   },
   '/academy': {
-    left: '485px',
+    left: '487px',
     width: '78px'
   },
-  '/market': {
+  '/forum': {
     left: '603px',
     width: '56px'
   },
-  '/blog': {
-    left: '700px',
-    width: '35px'
+  '/magazine': {
+    left: '697px',
+    width: '80px'
   },
 }
 
@@ -74,7 +74,7 @@ const DesktopNav = () => {
             onClick={()=>{
               handleClick('/business');
             }}>
-                Businesses<span className='text-[20px]'>&gt;</span>
+                Businesses<span className='text-[20px] opacity-0'>&gt;</span>
           </Link>
         </li>
         <li>
@@ -106,25 +106,25 @@ const DesktopNav = () => {
         </li>
         <li>
           <Link 
-            href='/market' 
-            aria-label='Visit Our Equipment Market' 
-            className={`${pathname==='/market' ? 'text-color-2' : ''} ${styles['link-6']} ${linksHidden ? 'hidden' : 'block'}`}
-            onClick={()=>handleClick('/market')}>
-                Market
+            href='/forum' 
+            aria-label='Visit Our Forum' 
+            className={`${pathname==='/forum' ? 'text-color-2' : ''} ${styles['link-6']} ${linksHidden ? 'hidden' : 'block'}`}
+            onClick={()=>handleClick('/forum')}>
+                Forum
           </Link>
         </li>
         <li>
           <Link 
-            href='/blog' 
-            aria-label='Read Dielectra Blog' 
-            className={`${pathname==='/blog' ? 'text-color-2' : ''} ${styles['link-7']} ${linksHidden ? 'hidden' : 'block'}`}
-            onClick={()=>handleClick('/blog')}>
-                Blog
+            href='/magazine' 
+            aria-label='Check Out Dielectra Magazine' 
+            className={`${pathname==='/magazine' ? 'text-color-2' : ''} ${styles['link-7']} ${linksHidden ? 'hidden' : 'block'}`}
+            onClick={()=>handleClick('/magazine')}>
+                Magazine
           </Link>
         </li>
         <span className={`absolute top-8 h-1 bg-color-2 transition-all duration-200 ease-in-out ${linksHidden ? 'hidden' : 'block'}`} style={{
-          left: NAV_LINK_UNDERLINE_STATUS[pathname]?.left || '16px',
-          width: NAV_LINK_UNDERLINE_STATUS[pathname]?.width || '48px' 
+          left: NAV_LINK_UNDERLINE_STATUS[pathname]?.left ?? '16px',
+          width: NAV_LINK_UNDERLINE_STATUS[pathname]?.width ?? '48px' 
         }}></span>
       </ul>
     </nav>

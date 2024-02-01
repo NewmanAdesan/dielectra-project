@@ -32,11 +32,11 @@ const MobileNav = ({isMobileNavActive, setIsMobileNavActive}:MobileNavProps) => 
       activeLinkHighlighter = '257px'
       break;
 
-    case "/market":
+    case "/forum":
       activeLinkHighlighter = '309px'
       break;
 
-    case "/blog":
+    case "/magazine":
       activeLinkHighlighter = '360px'
       break;
     default:
@@ -104,18 +104,18 @@ const MobileNav = ({isMobileNavActive, setIsMobileNavActive}:MobileNavProps) => 
               </li>
               <li className='mobile-nav-list-item'>
                   <Link 
-                    href='/market' 
-                    aria-label='Visit Our Equipment Market'
-                    onClick={(e) => handleLinkClick(e, '/market')}>
-                        Market
+                    href='/forum' 
+                    aria-label='Visit Our Forum'
+                    onClick={(e) => handleLinkClick(e, '/forum')}>
+                        Forum
                   </Link>
               </li>
               <li className='mobile-nav-list-item'>
                   <Link 
-                    href='/blog' 
-                    aria-label='Read Dielectra Blog' 
-                    onClick={(e) => handleLinkClick(e, '/blog')}>
-                        Blog
+                    href='/magazine' 
+                    aria-label='Check Out Dielectra Magazine'
+                    onClick={(e) => handleLinkClick(e, '/magazine')}>
+                        Magazine
                   </Link>
               </li>
               <span className='block bg-blue-1 w-[6px] h-4 absolute left-[28px] rounded transition-[top] duration-200 ease-out' style={{top: activeLinkHighlighter}}></span>

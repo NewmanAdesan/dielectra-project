@@ -3,7 +3,8 @@
 import { BannerDispatchAction, BannerInitialState } from '@/common.types' ;
 import { BannerImagesData } from '@/data/homepage' ;
 import React, { useEffect, useReducer } from 'react' ;
-import CustomImage from '../general/CustomImage';
+import { Fade } from 'react-awesome-reveal';
+import CustomImgElement from '../general/CustomImgElement'
 import BannerCarouselImage from './BannerCarouselImage' ;
 import BannerCarouselPaginationButton from './BannerCarouselPaginationButton' ;
 
@@ -111,17 +112,23 @@ const Banner = () => {
                     howManyImagesHasLoaded={howManyImagesHasLoaded}
               />
             ))}
+            <div className='absolute inset-0 bg-color-3'></div> {/* a dark overlay */}
         </div>
 
         {/* Banner Text */}
         <div className='absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-homepage-banner-text max-w-[653px] mx-auto p-5 rounded-xl text-center text-white'>
-            <h1 className='text-[32px] font-bold leading-[140%] mb-3 md:text-[40px]'>Connect to Power <span className='text-color-1'>Anywhere</span></h1>
-            <p className='text-[16px] font-normal leading-[140%] md:text-[20px]'>Providing affordable energy solutions to people no matter their location around Africa</p>
+            <h1 className='text-4xl font-bold leading-[140%] mb-3 md:text-6xl'>
+              <Fade cascade>
+                  <span>Connect to Power</span> 
+                  <span className='text-color-1'>Anywhere</span>
+              </Fade>
+            </h1>
+            {/* <p className='text-[16px] font-normal leading-[140%] md:text-[20px]'>Providing affordable energy solutions to people no matter their location around Africa</p> */}
         </div>
 
         {/* Banner Pagination */}
         <div className='absolute bottom-16 xs:bottom-12 left-1/2 -translate-x-1/2 '>
-          <div className='flex gap-1 justify-center w-20 rounded-lg bg-black p-1'>
+          <div className='flex gap-1 justify-center w-32 rounded-lg bg-black p-1'>
               {BannerImagesData.map((_, index) => (
                   <BannerCarouselPaginationButton 
                       key={index}
@@ -136,29 +143,29 @@ const Banner = () => {
         <div className='absolute top-full -translate-y-[25%] left-1/2 -translate-x-1/2 rounded-xl shadow-2xl w-homepage-banner-text bg-white-1 p-5 max-w-[500px] sm:max-w-[750px]' >
           <h3 className='text-center text-[20px] font-semibold text-red-600 mb-2'>Trusted By:</h3>
           <div className='flex flex-wrap justify-around items-center gap-6'>
-              <CustomImage 
+              <CustomImgElement 
                   src='/homepage/ikeja-electric.png' 
                   alt='Ikeja Electricity Company'
                   sizeClasses='w-[70px] sm:w-[90px] h-[55px] sm:h-[71px]'
-                  sizes='(max-width: 649px) 70px, 90px'
+                  // sizes='(max-width: 649px) 70px, 90px'
               />
-              <CustomImage
+              <CustomImgElement
                   src='/homepage/eko-electric.png'
                   alt='Eko Electricity Company'
                   sizeClasses='w-[68px] sm:w-[98px] h-[34px] sm:h-[49px]'
-                  sizes='(max-width: 649px) 68px, 98px'
+                  // sizes='(max-width: 649px) 68px, 98px'
               />
-              <CustomImage
+              <CustomImgElement
                   src='/homepage/Babcock.png'
                   alt='Babcock University'
                   sizeClasses='w-[60px] sm:w-[70px] h-[80px] sm:h-[93px]'
-                  sizes='(max-width: 649px) 60px, 70px'
+                  // sizes='(max-width: 649px) 60px, 70px'
               />
-              <CustomImage
+              <CustomImgElement
                   src='/homepage/Olam.png'
                   alt='Olam Industry'
                   sizeClasses='w-[93px] sm:w-[113px] h-[27px] sm:h-[33px]'
-                  sizes='(max-width: 649px) 93px, 113px'
+                  // sizes='(max-width: 649px) 93px, 113px'
               />
           </div>
         </div>

@@ -6,11 +6,11 @@ export const BannerImagesData: ImageData[] = [
         alt: 'Banner Image 1'
     },
     {
-        src: '/homepage/banner-image-2.png',
+        src: '/homepage/banner-image-2.jpg',
         alt: 'Banner Image 2'
     },
     {
-        src: '/homepage/banner-image-3.png',
+        src: '/homepage/banner-image-3.jpg',
         alt: 'Banner Image 3'
     },
     {
@@ -20,6 +20,18 @@ export const BannerImagesData: ImageData[] = [
     {
         src: '/homepage/banner-image-5.png',
         alt: 'Banner Image 5'
+    },
+    {
+        src: '/homepage/banner-image-6.jpg',
+        alt: 'Banner Image 6'
+    },
+    {
+        src: '/homepage/banner-image-7.png',
+        alt: 'Banner Image 7'
+    },
+    {
+        src: '/homepage/banner-image-8.jpg',
+        alt: 'Banner Image 8'
     },
 ]
 

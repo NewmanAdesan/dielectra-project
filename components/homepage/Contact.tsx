@@ -1,7 +1,8 @@
 "use client"
 
 import { useRef} from 'react'
-import CustomImage from '../general/CustomImage'
+import { Fade } from 'react-awesome-reveal';
+import CustomImgElement from '../general/CustomImgElement'
 
 const Contact = () => {
   const nameInputRef = useRef<null | HTMLInputElement>(null);
@@ -9,7 +10,6 @@ const Contact = () => {
   const messageInputRef = useRef<null | HTMLInputElement>(null);
 
   function handleFormSubmit() {
-
   }
 
   return (
@@ -33,11 +33,11 @@ const Contact = () => {
             {/* section content */}
             <div className='grid gap-10 sm:grid-cols-2'>
                 {/* contact image */}
-                <CustomImage
+                <CustomImgElement
                     src='/homepage/contact-img.png'
                     alt='Contact Us'
                     sizeClasses='w-full h-60 rounded-lg sm:self-center sm:col-start-2 xs:h-72 sm: justify-self-center max-w-[500px]'
-                    sizes='(max-width: 440px) 100vw, 500px'
+                    // sizes='(max-width: 440px) 100vw, 500px'
                  />
 
                 {/* contact form */}
@@ -45,10 +45,12 @@ const Contact = () => {
                     e.preventDefault();
                     handleFormSubmit();
                 }}>
-                    <input type="text" placeholder='Name' ref={nameInputRef} className='w-full py-[10px] px-3 rounded-lg bg-gray-3 border border-gray-2'/>
-                    <input type="email" placeholder='Email Address' ref={emailInputRef}  className='w-full py-[10px] px-3 rounded-lg bg-gray-3 border border-gray-2'/>
-                    <textarea placeholder='Your message' className='w-full h-56 py-[10px] px-3 rounded-lg bg-gray-3 border border-gray-2'></textarea>
-                    <button type='submit' className='w-full bg-blue-1 py-[10px] px-5 flex justify-center items-center text-center text-white text-base font-medium rounded-md'>Send message</button>
+                    <Fade direction='left' cascade triggerOnce>
+                        <input type="text" placeholder='Name' ref={nameInputRef} className='w-full py-[10px] px-3 rounded-lg bg-gray-3 border border-gray-2' required autoComplete='false'/>
+                        <input type="email" placeholder='Email Address' ref={emailInputRef}  className='w-full py-[10px] px-3 rounded-lg bg-gray-3 border border-gray-2' required autoComplete='false'/>
+                        <textarea placeholder='Your message' className='w-full h-56 py-[10px] px-3 rounded-lg bg-gray-3 border border-gray-2' required autoComplete='false'></textarea>
+                        <button type='submit' className='w-full bg-blue-1 py-[10px] px-5 flex justify-center items-center text-center text-white text-base font-medium rounded-md'>Send message</button>
+                    </Fade>
                 </form>
             </div>
 

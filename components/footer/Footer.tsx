@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='p-5 grid grid-cols-autoFit gap-x-5 gap-y-7 items-start max-w-7xl mx-auto md:pt-16'>
             {/* Logo */}
             <Link href='/' shallow aria-label='Go to Dielectra Home Page' className='p-[10px] flex gap-1 items-center'>
-                <Image
+                <img
                     src='/dielectra-logo.png'
                     width={60}
                     height={60}
@@ -20,23 +20,20 @@ const Footer = () => {
             <div className='px-[10px] w-full text-white leading-[140%]'>
                 <h3 className='text-xl md:text-2xl font-semibold'>About</h3>
                 <ul className='font-normal text-sm md:text-base flex flex-col gap-2'>
-                    <li>Who we are</li>
-                    <li>Our philosophy</li>
-                    <li>Our vision</li>
-                    <li>Core values</li>
-                    <li>FAQs</li>
+                    <li><Link href='/about-us#who-we-are'>Who we are</Link></li>
+                    <li><Link href='/about-us#our-philosophy'>Our philosophy</Link></li>
+                    <li><Link href='/about-us#our-goals'>Our Goals</Link></li>
+                    <li><Link href='/about-us#core-values'>Core values</Link></li>
                 </ul>
             </div>
             {/* Business */}
             <div className='px-[10px] w-full text-white leading-[140%]'>
                 <h3 className='text-xl md:text-2xl font-semibold'>Businesses</h3>
                 <ul className='font-normal text-sm md:text-base flex flex-col gap-2'>
-                    <li>Engineering and Construction</li>
-                    <li>Consulting</li>
-                    <li>Operations and Maintenance</li>
-                    <li>E-commerce</li>
-                    <li>Training and Certification</li>
-                    <li>Research and Development</li>
+                    <li><Link href='/business#engineering-and-construction'>Engineering and Construction</Link></li>
+                    <li><Link href='/business#consulting'>Consulting</Link></li>
+                    <li><Link href='/business#operations-and-maintenance'>Operations and Maintenance</Link></li>
+                    <li><Link href='/business#training-and-certification'>Training and Certification</Link></li>
                 </ul>
             </div>
             {/* Contact Us */}

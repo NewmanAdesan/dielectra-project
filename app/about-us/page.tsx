@@ -15,7 +15,7 @@ const AboutPage = () => {
 
   return (
     <div className='paragraph-font-setting-1'>
-        <Banner2 src='/about-page/aboutUsPageBanner.png' alt='' bannerText='About Us' />
+        <Banner2 src='/about-page/aboutUsPageBanner.jpg' alt='' bannerText='About Us' special={true} />
         <WhoWeAre />
         <OurPhilosophy />
         <OurCoreValues />

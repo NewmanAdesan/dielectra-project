@@ -14,7 +14,7 @@ const Header = () => {
 
 
     /* The Header */
-    <header className='header-show p-3 fixed -top-full left-0 z-30 flex justify-center bg-color-4 w-full h-header-mobile-height md:h-header-desktop-height md:p-4 transition-[top] duration-300'>
+    <header className='header-show p-3 fixed -top-full left-0 z-30 flex justify-center bg-color-3 backdrop-blur-md w-full h-header-mobile-height lg:h-header-desktop-height md:p-4 transition-[top] duration-300'>
 
           {/* The Header Container */}
           <div className='flex items-center justify-between gap-3 w-full max-w-[1280px]'>

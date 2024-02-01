@@ -51,7 +51,8 @@ export type ImageData = {
 
 
 export type Banner2 = {
-  bannerText: string
+  bannerText: string,
+  special?: boolean
 } & ImageData
 
 
@@ -63,7 +64,8 @@ export type CustomFILLImageProps = {
 
 
 export type CustomImageProps = {
-  sizeClasses: string
+  sizeClasses: string,
+  special?: boolean
 } & CustomFILLImageProps
 
 
@@ -100,7 +102,8 @@ export type CustomImgElementProps = {
   src: string,
   alt: string,
   sizeClasses: string
-  sizes?: string
+  sizes?: string,
+  special?: boolean
 }
 
 export type OverlayImageProps = CustomImgElementProps & {

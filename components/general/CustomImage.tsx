@@ -4,7 +4,7 @@ import { CustomImageProps } from '@/common.types';
 import Image from 'next/image';
 import React, { useState } from 'react'
 
-const CustomImage = ({src, alt, sizeClasses, onLoad, sizes='100vw', priority=false}: CustomImageProps) => {
+const CustomImage = ({src, alt, sizeClasses, onLoad, sizes='100vw', priority=false, special=false}: CustomImageProps) => {
   const [downloaded, setDownloaded] = useState(false)
   return (
     <div className={`${downloaded ? '' : 'image-loading rounded-md'} ${sizeClasses} relative overflow-hidden`}>
@@ -14,7 +14,7 @@ const CustomImage = ({src, alt, sizeClasses, onLoad, sizes='100vw', priority=fal
               style={{
                     objectFit: 'cover',
                     overflow: 'hidden',
-                    objectPosition: 'center',
+                    objectPosition: !special ? 'center' : '20% 20%',
                     opacity: downloaded ? '1' : '0',
                     transition: 'opacity 1s ease'
             }}

@@ -1,20 +1,20 @@
 import React from 'react'
 import Container from '../general/Container'
-import CustomImage from '../general/CustomImage'
+import CustomImgElement from '../general/CustomImgElement'
 import ListItem from '../general/ListItem'
 
 const OurPhilosophy = () => {
   return (
-    <section className='bg-white-1'>
+    <section className='bg-white-1' id='our-philosophy'>
         <Container>
                 <h2>Our <span className='text-blue-1'>Philosophy</span></h2>
 
                 <div className='grid gap-4 mt-3 2md:grid-cols-2'>
-                    <CustomImage 
-                        src='/about-page/ourPhilosophyIMG.png'
+                    <CustomImgElement 
+                        src='/about-page/ourPhilosophyIMG.jpg'
                         alt='Energy as a currency'
                         sizeClasses='w-full h-[200px] max-w-[335px] rounded-xl justify-self-center md:max-w-[504px] md:h-[380px]'
-                        sizes='(max-width: 768px) 335px, 504px'
+                        // sizes='(max-width: 768px) 335px, 504px'
                     />
                     
                     <ul className=' flex flex-col gap-3 md:gap-4 2md:self-center'>

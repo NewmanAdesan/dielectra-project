@@ -25,7 +25,8 @@ const BannerCarouselImage = ({src, alt, dispatch, index, activeImage, totalImage
   */
   if (index === 0 || howManyImagesHasLoaded >= index)
     return (
-        <Image src={src}
+        <Image
+            src={src}
             alt={alt}
             fill
             style={{

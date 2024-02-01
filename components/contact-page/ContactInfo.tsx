@@ -29,11 +29,6 @@ const ContactInfo = () => {
             text='+234 802 4115 234'
             bold={false}
         />
-        <ContactInfoItem 
-            src='/contact-page/phone-icon.svg' 
-            text='+234 905 2961 2350'
-            bold={false}
-        />
     </ul>
   )
 }

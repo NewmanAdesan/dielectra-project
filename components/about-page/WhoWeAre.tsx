@@ -4,7 +4,7 @@ import ListItem from '../general/ListItem'
 
 const WhoWeAre = () => {
   return (
-    <section>
+    <section id='who-we-are'>
         <Container>
                 <h2>Who are we?</h2>
                 <ul className='flex flex-col gap-3 md:gap-4'>
